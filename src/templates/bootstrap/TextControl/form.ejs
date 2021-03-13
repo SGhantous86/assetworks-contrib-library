@@ -1,0 +1,8 @@
+<div class="ticket-control text-control">
+    {% if (!ctx.hideComponent) { %}
+        <div class="field-label">{{ ctx.fieldLabel }}</div>
+        <div class="{{ctx.getClass(ctx.isMultiline)}}">
+            <span>{{ ctx.value }}</span>&nbsp;<span>{{ctx.getClass(ctx.isMultiline)}}</span>
+        </div>
+    {% } %}
+</div>

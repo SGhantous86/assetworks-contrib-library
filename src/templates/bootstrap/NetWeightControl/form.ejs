@@ -1,0 +1,8 @@
+<div class="ticket-control net-weight-control">
+    {% if (!ctx.hideComponent) { %}
+        <div class="field-label">{{ ctx.fieldLabel }}</div>
+        <div class="field-value">
+            <span>{{ ctx.getDisplayValue(ctx.value, ctx.weightPart) }}</span>
+        </div>
+    {% } %}
+</div>

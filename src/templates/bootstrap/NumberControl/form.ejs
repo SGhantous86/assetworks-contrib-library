@@ -1,0 +1,8 @@
+<div class="ticket-control number-control">
+    {% if (!ctx.hideComponent) { %}
+        <div class="field-label">{{ ctx.fieldLabel }}</div>
+        <div class="field-value">
+            <span>{{ ctx.value }}&nbsp;{{ctx.unitLabel}}</span>
+        </div>
+    {% } %}
+</div>

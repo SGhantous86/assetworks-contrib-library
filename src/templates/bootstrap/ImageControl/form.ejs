@@ -1,0 +1,9 @@
+
+<div class="ticket-control image-control">
+    {% if (!ctx.hideComponent) { %}
+        <div class="field-label">{{ ctx.fieldLabel }}</div>
+        <div class="field-value">
+            <img src="{{ctx.value}}" alt="{{ctx.fieldLabel}}" width="{{ctx.getImageWidth(ctx.imageWidth)}}" height="{{ctx.getImageHeight(ctx.imageHeight)">
+        </div>
+    {% } %}
+</div>

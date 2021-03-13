@@ -1,0 +1,13 @@
+<div class="ticket-control date-time-control">
+    {% if (!ctx.hideComponent) { %}
+        <div class="field-label">{{ ctx.fieldLabel }}</div>
+        <div class="field-value">
+            {% if (ctx.showDate ) { %}
+                <span>{{ ctx.getDateDisplayValue(ctx.value) }}</span>
+            {%  } %}
+            {% if (ctx.showTime ) { %}
+                &nbsp;<span>{{ ctx.getTimeDisplayValue(ctx.value, ctx.timePicker) }}</span>
+            {%  } %}
+        </div>
+    {% } %}
+</div>

@@ -1,0 +1,10 @@
+<div class="ticket-control checklist-control">
+    {% if (!ctx.hideComponent) { %}
+        <div class="field-label">{{ ctx.fieldLabel }}</div>
+        {% for (let i = 0; i < ctx.checklistOptions.length; i++) { %}
+        <div class="checklist-option">
+            <input type="checkbox" id="{{ctx.componentKey + ctx.checklistOptions[i].tag}}" {{ctx.checkboxChecked(ctx.value,ctx.checklistOptions[i].tag)}}><label for="{{ctx.componentKey + ctx.checklistOptions[i].tag}}">{{ ctx.checklistOptions[i].text }}</label>
+        </div>
+        {% } %}
+    {% } %}
+</div>

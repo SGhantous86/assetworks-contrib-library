@@ -1,0 +1,9 @@
+.text-control {
+    .single-line {
+        background-color: red;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

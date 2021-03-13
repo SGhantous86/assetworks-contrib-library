@@ -1,0 +1,5 @@
+<div class="ticket-control checkbox-control">
+    {% if (!ctx.hideComponent) { %}
+        <input type="checkbox" id="{{ctx.componentKey}}" {{ctx.checkboxChecked(ctx.value,ctx.checkedValue)}}><label for="{{ctx.componentKey}}">{{ctx.fieldLabel}}</label>
+    {% } %}
+</div>
