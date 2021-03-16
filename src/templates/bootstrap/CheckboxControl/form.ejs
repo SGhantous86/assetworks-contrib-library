@@ -1,5 +1,15 @@
-<div class="ticket-control checkbox-control">
+<div class="ticket-control">
     {% if (!ctx.hideComponent) { %}
-        <input type="checkbox" id="{{ctx.componentKey}}" {{ctx.checkboxChecked(ctx.value,ctx.checkedValue)}}><label for="{{ctx.componentKey}}">{{ctx.fieldLabel}}</label>
+    <div class="fss-checkbox-container">
+        <div>
+            <label class="fss-checkbox">
+                <input type="checkbox" {{ctx.checkboxChecked(ctx.value, ctx.checkedValue)}} />
+                <span class="checkbox-checkmark"></span>
+            </label>
+        </div>
+        <div class="fss-checkbox-text">
+            <span class="field-value">{{ctx.fieldLabel}}</span>
+        </div>
+    </div>    
     {% } %}
 </div>

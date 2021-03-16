@@ -1,10 +1,21 @@
-<div class="ticket-control checklist-control">
+<div class="ticket-control">
     {% if (!ctx.hideComponent) { %}
         <div class="field-label">{{ ctx.fieldLabel }}</div>
-        {% for (let i = 0; i < ctx.checklistOptions.length; i++) { %}
-        <div class="checklist-option">
-            <input type="checkbox" id="{{ctx.componentKey + ctx.checklistOptions[i].tag}}" {{ctx.checkboxChecked(ctx.value,ctx.checklistOptions[i].tag)}}><label for="{{ctx.componentKey + ctx.checklistOptions[i].tag}}">{{ ctx.checklistOptions[i].text }}</label>
-        </div>
-        {% } %}
+            {% for (let i = 0; i < ctx.checklistOptions.length; i++) { %}
+            <div class="fss-checkbox-container">
+                <div>
+                    <label class="fss-checkbox">
+                        <div>
+                            <input type="checkbox" {{ctx.checkboxChecked(ctx.value, ctx.checklistOptions[i].tag)}} />
+                            <span class="checkbox-checkmark"></span>
+                        </div>                    
+                    </label>
+                </div>
+                <div class="fss-checkbox-text">
+                    <span class="field-value">{{ctx.checklistOptions[i].text}}</span>
+                </div>
+            </div>
+                
+            {% } %}
     {% } %}
 </div>

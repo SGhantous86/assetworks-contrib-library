@@ -1,10 +1,18 @@
 <div class="ticket-control radiolist-control">
     {% if (!ctx.hideComponent) { %}
         <div class="field-label">{{ ctx.fieldLabel }}</div>
-        {% for (let i = 0; i < ctx.radiolistOptions.length; i++) { %}
-            <div class="radiolist-option">
-                <input type="radio" id="{{ctx.componentKey + ctx.radiolistOptions[i].tag}}" {{ctx.radioChecked(ctx.value, ctx.radiolistOptions[i].tag)}}><label for="{{ctx.componentKey + ctx.radiolistOptions[i].tag}}">{{ctx.radiolistOptions[i].text}}</label>
-            </div>
-        {% } %}
+            {% for (let i = 0; i < ctx.radiolistOptions.length; i++) { %}
+                <div class="fss-radiobutton-container">
+                    <div>
+                        <label class="fss-radiobutton">
+                            <input type="radio" {{ctx.radioChecked(ctx.value, ctx.radiolistOptions[i].tag)}} />
+                            <span class="radiobutton-checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="fss-radiobutton-text">
+                        <span class="field-value">{{ctx.radiolistOptions[i].text}}</span>
+                    </div>
+                </div>                
+            {% } %}        
     {% } %}
 </div>

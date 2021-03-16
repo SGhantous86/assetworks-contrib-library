@@ -1,6 +1,6 @@
 {
   "name": "assetworks-contrib-library",
-  "version": "1.0.60",
+  "version": "1.0.85",
   "description": "Custom Components for AssetWorks FSS",
   "main": "lib/index.js",
   "module": "node",

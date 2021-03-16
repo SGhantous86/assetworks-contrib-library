@@ -1,13 +1,113 @@
 .ticket-control {
   font-family: "Roboto", Helvetica, Arial, serif;
-  color: #323E48;
+  color: #323E48; }
+
+.field-label {
   font-size: 13px;
-  font-weight: 400;
-  line-height: 20px; }
+  line-height: 13px;
+  font-weight: 500; }
+
+.field-value {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400; }
+
+.panel-text-left .card-header {
+  text-align: left; }
+
+.panel-text-center .card-header {
+  text-align: center; }
+
+.panel-text-right .card-header {
+  text-align: right; }
+
+.panel-text-bold .card-title {
+  font-weight: bold; }
+
+.panel-text-underline .card-title {
+  text-decoration: underline; }
+
+.panel-text-medium .card-title {
+  font-size: 1.52381em; }
+
+.panel-text-large .card-title {
+  font-size: 1.714286em; }
+
+.fss-checkbox-container {
+  display: flex;
+  flex-direction: row; }
+  .fss-checkbox-container .fss-checkbox-text {
+    padding-left: 8px; }
+  .fss-checkbox-container .fss-checkbox {
+    display: block;
+    position: relative;
+    margin-bottom: 5px; }
+    .fss-checkbox-container .fss-checkbox input[type=checkbox] {
+      visibility: hidden; }
+    .fss-checkbox-container .fss-checkbox .checkbox-checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: #FFFFFF;
+      border: 2px solid #999FA4;
+      border-radius: 2px; }
+    .fss-checkbox-container .fss-checkbox input:checked ~ .checkbox-checkmark {
+      background-color: #0062A6;
+      border: 2px solid #0062A6; }
+    .fss-checkbox-container .fss-checkbox .checkbox-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .fss-checkbox-container .fss-checkbox input:checked ~ .checkbox-checkmark:after {
+      display: block; }
+    .fss-checkbox-container .fss-checkbox .checkbox-checkmark:after {
+      left: 3px;
+      bottom: 2px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+.fss-radiobutton-container {
+  display: flex;
+  flex-direction: row; }
+  .fss-radiobutton-container .fss-radiobutton-text {
+    padding-left: 8px; }
+  .fss-radiobutton-container .fss-radiobutton {
+    display: block;
+    position: relative;
+    margin-bottom: 5px; }
+    .fss-radiobutton-container .fss-radiobutton input[type=radio] {
+      visibility: hidden; }
+    .fss-radiobutton-container .fss-radiobutton .radiobutton-checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: #FFFFFF;
+      border-radius: 50%;
+      border: 2px solid #0062A6; }
+    .fss-radiobutton-container .fss-radiobutton .radiobutton-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .fss-radiobutton-container .fss-radiobutton input:checked ~ .radiobutton-checkmark:after {
+      display: block; }
+    .fss-radiobutton-container .fss-radiobutton .radiobutton-checkmark:after {
+      top: 1px;
+      left: 1px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #0062A6; }
 
 .text-control .single-line {
-  background-color: red;
-  width: 200px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }

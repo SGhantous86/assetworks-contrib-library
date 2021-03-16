@@ -1,0 +1,41 @@
+.panel-text-left {
+    .card-header {
+        text-align: left;
+    }
+}
+
+.panel-text-center {
+    .card-header {
+        text-align: center;
+    }
+}
+
+.panel-text-right {
+    .card-header {
+        text-align: right;
+    }
+}
+
+.panel-text-bold {
+    .card-title {
+        font-weight: bold;
+    }
+}
+
+.panel-text-underline {
+    .card-title {
+        text-decoration: underline;
+    }
+}
+
+.panel-text-medium {
+    .card-title {
+        font-size: 1.52381em;
+    }
+}
+
+.panel-text-large {
+    .card-title {
+        font-size: 1.714286em;
+    }
+}
